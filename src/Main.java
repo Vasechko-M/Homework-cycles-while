@@ -19,14 +19,16 @@ public class Main {
         System.out.println();
         for (i = 10; i > 0; i = i - 1) {
             System.out.print(i + " ");
+            System.out.println();
         }
         //task 3
         System.out.println("Задача 3");
         int population = 12_000_000;
         int expectability = population*17/1000;
         int mortality = population*8/1000;
-        for (i=1;i<10;i++) {
-            population = population + expectability - mortality;
+        for (i=1;i<=10;i++) {
+            int growth = expectability - mortality;
+            population = population + growth;
             System.out.println("Год " + i + " численность населения составляет " + population);
         }
 
