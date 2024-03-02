@@ -59,16 +59,14 @@ public class Main {
         }
         //task7
         System.out.println("Задача 7");
+        int friday = 1;
         for (int dayNumber = 1; dayNumber <= 31; dayNumber++) {
-
-            if (dayNumber % 7 == 0) {
-
+            friday = friday + 6;
+            if (friday % 7 == 0) {
                 System.out.println("Сегодня пятница, " + dayNumber + "-е число. Необходимо подготовить отчет");
-                continue;
+                //continue;
             }
-            System.out.println("Сегодня, " + dayNumber + "-е число");
-            // НЕ ЗАКОНЧЕНО!!!!!!!!!!!!!! Программа работает только при условии, что пятница
-            // начинается с 7-го числа
+
         }
         //task8
         System.out.println("Задача 8");
