@@ -22,7 +22,13 @@ public class Main {
         }
         //task 3
         System.out.println("Задача 3");
-        //int y = 12_000_000; НЕ ПОНЯТНО УСЛОВИЕ ЗАДАЧИ
+        int population = 12_000_000;
+        int expectability = population*17/1000;
+        int mortality = population*8/1000;
+        for (i=1;i<10;i++) {
+            population = population + expectability - mortality;
+            System.out.println("Год " + i + " численность населения составляет " + population);
+        }
 
         //task 4
         System.out.println("Задача 4");
@@ -55,13 +61,14 @@ public class Main {
         System.out.println("Задача 7");
         for (int dayNumber = 1; dayNumber <= 31; dayNumber++) {
 
-            if (dayNumber % 5 == 0) {
-                //while (dayNumber <= 7)
+            if (dayNumber % 7 == 0) {
+
                 System.out.println("Сегодня пятница, " + dayNumber + "-е число. Необходимо подготовить отчет");
                 continue;
             }
             System.out.println("Сегодня, " + dayNumber + "-е число");
-            // НЕ ЗАКОНЧЕНО!!!!!!!!!!!!!!!
+            // НЕ ЗАКОНЧЕНО!!!!!!!!!!!!!! Программа работает только при условии, что пятница
+            // начинается с 7-го числа
         }
         //task8
         System.out.println("Задача 8");
